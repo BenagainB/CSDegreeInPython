@@ -1,6 +1,6 @@
 # Introduction to Programming
 
-[Go to section >>](\1.IntroductionToProgramming)
+[<< Go back up a level](/Year_One/Year_One.md)
 
 ## Section Description
 
@@ -25,4 +25,12 @@ A successful student will understand the concepts and practices of problem solvi
 
 ## Assignments
 
-*   Assignment 1 [Go to assignment >>](1.IntroductionToProgramming\Assignment1.md)
+[Assignment 1](Assignment1.md)
+
+Assignment 2
+
+Assignment 3
+
+Assignment 4
+
+Assignment 5
