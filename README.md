@@ -10,7 +10,7 @@ Re-doing all of my Computer Science Assignments in Python
 
 ### Year One
 
-#### Introduction to Programming [Go To Section](/Year One/1.IntroductionToProgramming)
+#### Introduction to Programming [Go To Section](\Year_One\1.IntroductionToProgramming)
 
 #### Programming Principles I [Go To Section](\2.ProgrammingPrinciplesI)
 
