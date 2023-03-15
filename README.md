@@ -55,7 +55,7 @@ Honestly, I'm not sure who can benefit from this repo. Anyone who's been develop
 
 ```mermaid
 graph TD;
-    Intro To Programming-->Prog Pinciples I;
-    Prog Principles I-->Prog Principles II;
-    Prog Principles II-->OOP;
+    'Intro To Programming'-->'Prog Pinciples I';
+    'Prog Principles I'-->'Prog Principles II';
+    'Prog Principles II'-->'OOP';
 ```
