@@ -26,6 +26,7 @@ Honestly, I'm not sure who can benefit from this repo. Anyone who's been develop
 *   [Programming Principles I](Year_One/2.ProgrammingPrinciplesI/ProgrammingPrinciplesI.md)
 *   [Programming Principles II](Year_One/3.ProgrammingPrinciplesII/ProgrammingPrinciplesII.md)
 *   [Object Oriented Programming](Year_One/4.ObjectOrientedProgramming/OOP.md)
+*   Design Patterns
 *   [Algebra and Pre-Calculus](Year_One/5.AlgebraAndPre-Calc/Algebra.md)
 
 ```mermaid
@@ -33,6 +34,8 @@ graph LR;
     IntroProg-->ProgPrincI;
     ProgPrincI-->ProgPrincII;
     ProgPrincII-->OOP;
+    ProgPrincII-->DesignPatterns;
+    Algebra;
 ```
 </details>
 
@@ -51,6 +54,8 @@ graph LR;
 graph LR;
     DataStructures-->Algorithms;
     WebDev-->WebScrape;
+    RelDatabase;
+
 ```
 </details>
 
@@ -68,5 +73,6 @@ graph LR;
 graph LR;
     DataMining-->BigData;
     DataMining-->NLP;
+    Parallel&Cloud;
 ```
 </details>
