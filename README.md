@@ -51,3 +51,13 @@ Honestly, I'm not sure who can benefit from this repo. Anyone who's been develop
 *   [Natural Language Processing](Year_Three/3.NLP/NLP.md)
 *   [Parallel & Cloud Computing](Year_Three/4.Parallel/Parallel.md)
 </details>
+
+
+```mermaid
+flowchart LR
+
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
+```

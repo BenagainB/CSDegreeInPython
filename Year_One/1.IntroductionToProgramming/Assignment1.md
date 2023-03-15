@@ -8,9 +8,9 @@ This assignment involves coding and testing of a program.
  
 The basic design of the first programs that you construct in this class consists of a prompt for information, receiving information, processing that information then producing a display of the results.
 
-[Go To Code](Assignment1.py)
+[Go To Pseudo Code](Assignment1_PseudoCode.txt)
 
-[Go To Pseudo Code](Assignment1.txt)
+[Go To Code](Assignment1.py)
 
 ### Background
 
