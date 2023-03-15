@@ -1,6 +1,6 @@
 # Introduction to Programming
 
-[Go to section >>](/1.IntroductionToProgramming)
+[Go to section >>](\1.IntroductionToProgramming)
 
 ## Section Description
 
@@ -22,3 +22,7 @@ A successful student will understand the concepts and practices of problem solvi
 *   Understand how to implement and use functions/methods.
 *   Understand how to open, close and use files.
 *   Understand basic exception handling.
+
+## Assignments
+
+*   Assignment 1 [Go to assignment >>](1.IntroductionToProgramming\Assignment1.md)
