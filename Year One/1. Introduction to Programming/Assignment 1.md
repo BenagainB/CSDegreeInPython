@@ -1,4 +1,5 @@
-Assignment Overview
+#Assignment One
+##Assignment Overview
 This assignment involves coding and testing of a program. 
  
 The basic design of the first programs that you construct in this class consists of a prompt for information, receiving information, processing that information then producing a display of the results.
@@ -14,7 +15,7 @@ Your program will prompt the user for two non-zero integer numbers (numbers with
 •	Fourth line: the first number raised to the second number
 •	Fifth line: the integer division of the first number by the second number, followed by the remainder from dividing the first number by the second number
 
-Assignment Notes:
+##Assignment Notes:
 To input the numbers it is necessary to use the input function. The input function takes a string, a sequence of characters between quotes, as a prompt to print to the user. It then waits until the user types a response, terminated by the user typing the Enter key. A string, again as a sequence of characters, is returned.
  
 The returned string must be converted to a number. Since in this assignment we are strictly working with integers, a string is converted to an integer using the int function. The int function takes as an argument a single string and returns the integer the string represents. A typical interaction would be something like:
