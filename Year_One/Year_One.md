@@ -23,7 +23,7 @@ In programming principles, you are learning how to write simple programs that do
 *   Refactor
 *   Clean Code
 
-Once you get into object-oriented programming, you learn to apply basic design patterns, unit testing and versioning. You also get your first glimpse into common algorithms used in industry, how to work within the Software Development Life-Cycle, and how to build and run unit tests. General topics include:
+Once you get into design patterns, you learn to apply object-oriented programming principles, unit testing and versioning. You also get your first glimpse into common algorithms used in industry, how to work within the Software Development Life-Cycle, and how to build and run unit tests. General topics include:
 *   Design Patterns
     *   Strategy
     *   Observer
@@ -53,7 +53,7 @@ I've included some math courses in this section because this is typically the le
 
 [Programming Principles II](3.ProgrammingPrinciplesII/ProgrammingPrinciplesII.md)
 
-[Object Oriented Programming](4.ObjectOrientedProgramming/OOP.md)
+[Design Patterns](4.DesignPatterns/Design.md)
 
 [Algebra and Pre-Calculus](5.AlgebraAndPre-Calc/Algebra.md)
 

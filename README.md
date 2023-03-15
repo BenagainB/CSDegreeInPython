@@ -25,7 +25,7 @@ Honestly, I'm not sure who can benefit from this repo. Anyone who's been develop
 *   [Introduction to Programming](Year_One/1.IntroductionToProgramming/IntroToProgramming.md)
 *   [Programming Principles I](Year_One/2.ProgrammingPrinciplesI/ProgrammingPrinciplesI.md)
 *   [Programming Principles II](Year_One/3.ProgrammingPrinciplesII/ProgrammingPrinciplesII.md)
-*   [Object Oriented Programming](Year_One/4.ObjectOrientedProgramming/OOP.md)
+*   [Design Patterns](Year_One/4.DesignPatterns/Design.md)
 *   Design Patterns
 *   [Algebra and Pre-Calculus](Year_One/5.AlgebraAndPre-Calc/Algebra.md)
 
@@ -33,7 +33,6 @@ Honestly, I'm not sure who can benefit from this repo. Anyone who's been develop
 graph LR;
     IntroProg-->ProgPrincI;
     ProgPrincI-->ProgPrincII;
-    ProgPrincII-->OOP;
     ProgPrincII-->DesignPatterns;
     Algebra;
 ```
