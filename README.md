@@ -54,10 +54,8 @@ Honestly, I'm not sure who can benefit from this repo. Anyone who's been develop
 
 
 ```mermaid
-flowchart LR
-
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+graph TD;
+    Intro To Programming-->Prog Pinciples I;
+    Prog Principles I-->Prog Principles II;
+    Prog Principles II-->OOP;
 ```
