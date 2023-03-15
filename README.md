@@ -27,6 +27,13 @@ Honestly, I'm not sure who can benefit from this repo. Anyone who's been develop
 *   [Programming Principles II](Year_One/3.ProgrammingPrinciplesII/ProgrammingPrinciplesII.md)
 *   [Object Oriented Programming](Year_One/4.ObjectOrientedProgramming/OOP.md)
 *   [Algebra and Pre-Calculus](Year_One/5.AlgebraAndPre-Calc/Algebra.md)
+
+```mermaid
+graph LR;
+    IntroProg-->ProgPrincI;
+    ProgPrincI-->ProgPrincII;
+    ProgPrincII-->OOP;
+```
 </details>
 
 
@@ -39,6 +46,12 @@ Honestly, I'm not sure who can benefit from this repo. Anyone who's been develop
 *   [Relational Database Systems](Year_Two/3.RDBS/RDBS.md)
 *   [Web Development](Year_Two/4.WebDev/WebDev.md)
 *   [Web Scraping](Year_Two/5.WebScraping/WebScraping.md)
+
+```mermaid
+graph LR;
+    DataStructures-->Algorithms;
+    WebDev-->WebScrape;
+```
 </details>
 
 
@@ -50,12 +63,10 @@ Honestly, I'm not sure who can benefit from this repo. Anyone who's been develop
 *   [Big Data Analytics](Year_Three/2.BigData/BigData.md)
 *   [Natural Language Processing](Year_Three/3.NLP/NLP.md)
 *   [Parallel & Cloud Computing](Year_Three/4.Parallel/Parallel.md)
-</details>
-
 
 ```mermaid
-graph TD;
-    ITP-->PPI;
-    PPI-->PPII;
-    PPII-->OOP;
+graph LR;
+    DataMining-->BigData;
+    DataMining-->NLP;
 ```
+</details>
