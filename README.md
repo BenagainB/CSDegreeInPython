@@ -1,5 +1,8 @@
 # Computer Science Degree In Python
 
+[Cover Image](1905.i126.005_programmer%20work.jpg)
+<a href="https://www.freepik.com/free-vector/programmer-work-with-working-day-symbols-flat-illustration_15329611.htm#query=python&position=11&from_view=search&track=sph">Image by macrovector</a> on Freepik
+
 ## What Is This Repo?
 
 This repository is an effort to capture (as much as possible) the work a student in a Computer Science Degree program would produce. In essence, I'm re-doing almost all of my Computer Science assignments in Python (except where that's not possible, or I just don't know how to do so yet).
