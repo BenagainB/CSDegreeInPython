@@ -1,6 +1,6 @@
 # Computer Science Degree In Python
 
-[Cover Image](1905.i126.005_programmer%20work.jpg)
+[Cover Image](1905.i126.005_programmerWork.jpg)
 <a href="https://www.freepik.com/free-vector/programmer-work-with-working-day-symbols-flat-illustration_15329611.htm#query=python&position=11&from_view=search&track=sph">Image by macrovector</a> on Freepik
 
 ## What Is This Repo?
