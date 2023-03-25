@@ -33,9 +33,9 @@ Honestly, I'm not sure who can benefit from this repo. Anyone who's been develop
 
 ```mermaid
 graph LR;
-    IntroProg-->ProgPrincI;
-    ProgPrincI-->ProgPrincII;
-    ProgPrincII-->DesignPatterns;
+    IntroToProgramming-->ProgrammingPrinciplesI;
+    ProgrammingPrinciplesI-->ProgrammingPrinciplesII;
+    ProgrammingPrinciplesII-->DesignPatterns;
     Algebra;
 ```
 </details>
@@ -54,8 +54,8 @@ graph LR;
 ```mermaid
 graph LR;
     DataStructures-->Algorithms;
-    WebDev-->WebScrape;
-    RelDatabase;
+    WebDevelopment-->WebScraping;
+    RelationalDatabases;
 
 ```
 </details>
@@ -73,7 +73,7 @@ graph LR;
 ```mermaid
 graph LR;
     DataMining-->BigData;
-    DataMining-->NLP;
+    DataMining-->NaturalLanguageProcessing;
     Parallel&Cloud;
 ```
 </details>

@@ -14,6 +14,40 @@ Learn fundamental programming concepts, programming environment topics and curre
 
 A successful student will understand the concepts and practices of problem solving, developing algorithms and writing computer programs using an imperative programming language. 
 
+### Key Concepts:
+
+*   Difference between computer and calculator
+*	Significance of Moore’s law
+*	Computer Language
+    * High-Level vs. Low-Level Language
+    * Compiler vs. Interpreter
+*   Definition of Algorithm
+*   Hardware/Software definitions
+*   Decomposition (Breaking down problem into small steps)
+*   Pseudocode
+*   Flowcharting
+*	Boolean logic
+*	Python Logical Operators (== != > < >= <= not and or)
+*   Selection structures (if/elif/else)
+*   Nesting
+*   Boolean variables (type: bool)
+*   Loops (condition-controlled and count-controlled)
+*   Indention
+*	Define functions (def funcName():)
+*	Calling a function
+*   Arguments and Variables
+*	Passing values to functions
+*	Return value from functions (return val)
+*	Variable scoping in functions
+*   Reading from the console
+*   Reading from a file
+*   Exceptions
+*   Lists and Tuples
+
+
+
+
+
 ## Learning Outcomes 
 
 *   Understand arithmetical order of operations.
