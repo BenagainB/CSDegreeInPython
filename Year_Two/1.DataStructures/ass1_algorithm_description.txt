@@ -1,0 +1,60 @@
+Assignment 1
+
+The following is a description of how I modified a basic binary search algorithm to find the range
+of two terms (low and high) within a set of integers.
+
+
+For my algorithm, I began by modifying the binary search algorithm I built referencing the pseudocode 
+provided in the suggested book reference.
+
+public static int binarySearchIteration(int[]arr, int x) {
+	/* Find a location in arr[ ], where the array element’s value is equal to x */
+		int low = 0, high = arr.length-1;
+		while (low <= high) {
+			int mid = (int) Math.floor((low + high)/2);
+			if (arr[mid] == x) {
+				return mid;
+			}
+			else if (arr[mid] < x) {
+				low = mid + 1;
+			}
+			else {
+				high = mid - 1;
+			}
+		}
+		return -1;
+	} //end binarySearchIteration method
+
+I created two methods: one to find the index related to the lower bound input by the user,
+the other to find the index related to the upper bound input by the user.
+
+
+For the lower bound index, I kept the arguments, initial declarations, and while condition the same.
+I maintained the same structure of if, else if, and else. 
+
+Within the if statement, I added an additional if, else if, and else block. Within the nested if, 
+I returned mid if mid equals 0, Within the nested else if, if mid-1 equals the search variable x, 
+I set high to mid-1. Within the nested else, I return mid.
+
+Within the else if statement, I maintain the same condition and set low to mid+1.
+
+Within the else statement, I added an additional if, else if, and else block. Within the nested if,
+if mid equals 0, I return mid. Within the nested else if, if mid-1 is less than the search variable x,
+I return mid. Within the nested else, high is set to mid-1.
+
+The method still returns -1 if nothing else is returned.
+
+
+For the upper bound index, I kept the arguments (except using y instead of x), initial declarations, and while condition the same.
+I maintained the same structure of if, else if, and else.
+
+Within the if statement (where mid equals y), I added an additional if, else if, and else block. Within the nested if,
+if mid is the last element in the array, I return the last element index. Within the nested else if,
+if mid+1 equals the search term y, I set low to mid+1. Within the nested else, I return mid.
+
+Within the else if statement (where mid is greater than y), I added additional if and else block. within the nested if,
+if mid-1 is greater than or equal to y, I return mid-1. within the nested else, I set high to mid-1.
+
+Within the else statement, low is set to mid+1.
+
+The method still returns -1 if nothing else is returned.

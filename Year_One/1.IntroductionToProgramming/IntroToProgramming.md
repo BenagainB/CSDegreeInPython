@@ -6,6 +6,9 @@
 
 Learn fundamental programming concepts, programming environment topics and current technologies in computing. Programming concepts include structure and design using pseudo-code, basic syntax, variables, arithmetic, decisions, repetition, input and output. Programming environment topics include editor use, saving, compiling, running and debugging. Programming projects are required.
 
+## Prerequisites
+Fair understanding of basic Algebra and Order of Operations
+
 ## Suggested book 
 
 > *Starting Out with Python* (4th Edition) by Tony Gaddis • ISBN-10:0134444329 • ISBN-13:9780134444321

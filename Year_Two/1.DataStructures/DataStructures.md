@@ -4,24 +4,32 @@
 
 ## Section Description
 
-~~Learn fundamental programming concepts, programming environment topics and current technologies in computing. Programming concepts include structure and design using pseudo-code, basic syntax, variables, arithmetic, decisions, repetition, input and output. Programming environment topics include editor use, saving, compiling, running and debugging. Programming projects are required.~~
+Learn fundamental abstract concepts of data structures as well as their implementation in a programming language. Topics include linked lists, stacks, queues, hashing, recursion, complexity analysis of algorithms, and binary trees.
 
 ## Suggested book 
 
-> *Starting Out with Python* (4th Edition) by Tony Gaddis • ISBN-10:0134444329 • ISBN-13:9780134444321
+> *Data Structures & Algorithms in Python (Developer's Library)* (1st Edition) by John Canning, Alan Broder, Robert Lafore • ISBN-10:013485568X • ISBN-13:978-0134855684
 
 ## Topics Covered 
 
-~~A successful student will understand the concepts and practices of problem solving, developing algorithms and writing computer programs using an imperative programming language. ~~
+*   Link list
+*   Recursion
+*   Algorithm analysis
+*   Stack
+*   FIFO queue
+*   Sorting
+*   Hashing
+*   Binary trees
 
 ## Learning Outcomes 
 
-*   Understand arithmetical order of operations.
-*   Understand Boolean logic and Boolean operations.
-*   Understand program flow by using selection and iteration.
-*   Understand how to implement and use functions/methods.
-*   Understand how to open, close and use files.
-*   Understand basic exception handling.
+*   ~~Write a basic program with multiple design patterns that models familiar computational behavior whose implementation is likely not familiar or understood~~
+*   ~~Interpret requirements and specifications, get clarification on anything unknown or uncertain, and translate them into a solution~~
+*   ~~Make use of industry-standard data formats to become familiar with processing them in a flexible manner through design patterns~~
+*   ~~Develop a structurally complex solution using design patterns to manipulate realistic language-based programming constructs~~
+*   ~~Accommodate and enforce appropriate interconnections among a relatively large set of heterogeneous object types with various constraints~~
+*   ~~Develop a software solution in a team environment that utilizes versioning for code organization amongst team members~~
+*   ~~Develop a software solution in a team environment that utilizes unit tests to validate important methods, modules, and components that are part of the solution~~
 
 ## Assignments
 
