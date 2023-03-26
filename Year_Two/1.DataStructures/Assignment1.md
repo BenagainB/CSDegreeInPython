@@ -30,6 +30,11 @@ value belonging to this range.
 >
 </iframe>
 
+```
+from IPython.display import IFrame
+IFrame('http://blablablabla', 800, 350)
+```
+
 ### Background
 
 Note that in order to make the program overall efficient, the searches for both s and t need to be efficient and each search can take no more than O(log n) time, making the overall program to have a time cost of O(log n). It is your job to figure out how to efficiently modify the binary search to search for s and t. You will need to have two different modified versions of the binary search for the searchings of s and t efficiently.
