@@ -20,6 +20,15 @@ have values belonging to [1..15], while all other array elements do not.
 value belonging to this range.
 *   Given a value range [x..y] = [22..35], the answer should be null, because no array element has a value belonging to this range.
 
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/watch?v=wz7XgKowJIg"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 ### Background
 
@@ -91,7 +100,7 @@ and the output should be:
 
 ### Hints
 
-[text description of simple solution](ass1_data.txt)
+[text description of simple solution](ass1_algorithm_description.txt)
 
 ### Solution
 
