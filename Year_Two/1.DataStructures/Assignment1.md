@@ -25,9 +25,9 @@ value belonging to this range.
 
 ### Background
 
-Note that in order to make the program overall efficient, the searches for both s and t need to be efficient and each search can take no more than O(log n) time, making the overall program to have a time cost of O(log n). It is your job to figure out how to efficiently modify the binary search to search for s and t. You will need to have two different modified versions of the binary search for the searchings of s and t efficiently.
+Note that in order to make the program overall efficient, the searches for both s and t need to be efficient and each search can take no more than *O*(log*n*) time, making the overall program to have a time cost of *O*(log*n*). It is your job to figure out how to efficiently modify the binary search to search for s and t. You will need to have two different modified versions of the binary search for the searchings of s and t efficiently.
 
-Obviously, an exhaustive search in the array A with the value range [x..y] kept in mind will not be efficient, as it will take O(n) time in the worst case. You also need to know that the following idea is not efficient either and will spend O(n) time in the worst case and thus cannot be used: We modify the binary search, such that it can find the location of one of the smallest array elements that are ≥ x, then we do a walk starting from that location toward the left boundary of the array A to find the value of s. This procedure is not efficient, because the walk itself can cover the majority of the array A in the worst case. (Similar idea for finding t will not be efficient either. )
+Obviously, an exhaustive search in the array A with the value range [x..y] kept in mind will not be efficient, as it will take *O*(*n*) time in the worst case. You also need to know that the following idea is not efficient either and will spend *O*(*n*) time in the worst case and thus cannot be used: We modify the binary search, such that it can find the location of one of the smallest array elements that are ≥ x, then we do a walk starting from that location toward the left boundary of the array A to find the value of s. This procedure is not efficient, because the walk itself can cover the majority of the array A in the worst case. (Similar idea for finding t will not be efficient either. )
 
 
 ### Program Specifications

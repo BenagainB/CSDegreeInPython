@@ -71,16 +71,45 @@ Fair understanding of basic Algebra and Order of Operations
 
 ## Learning Outcomes 
 * design a program based on a specification document
-* write, compile and execute a complete program that reads from a file
-* write, compile and execute a complete program that will simulate a “has-a” relationship
+* write and execute a complete program that reads from a file
+* write and execute a complete program that will simulate a “has-a” relationship
 * design a program implementing the comparable interface
 * design a program that overrides the equals method
 * design a program that overrides the hashCode method
-* write, compile and execute a complete program that will utilize static methods
-* write, compile and execute a complete program that will utilize an array
-
+* write and execute a complete program that will utilize static methods
+* write and execute a complete program that will utilize an array
 
 
 ## Assignments
 
+[Assignment 1 - MetricConversion](Assignment1.md)
 
+[Assignment 2 - Selections #1](Assignment2.md)
+
+[Assignment 3 - Selections #2](Assignment3.md)
+
+[Assignment 4 - Selections #3](Assignment4.md)
+
+[Assignment 5 - Loops #1](Assignment5.md)
+
+[Assignment 6 - Loops #2](Assignment6.md)
+
+[Assignment 7 - Loops #3](Assignment7.md)
+
+[Assignment 8 - CodingPractice #1](Assignment8.md)
+
+[Assignment 9 - GolfSlang](Assignment9.md)
+
+[Assignment 10 - ArrayUtils](Assignment10.md)
+
+[Assignment 11 - StatsUtils](Assignment11.md)
+
+[Assignment 12 - FileUtils](Assignment12.md)
+
+[Assignment 13 - CodingPractice #2](Assignment13.md)
+
+[Assignment 14 - RegularPolygon](Assignment14.md)
+
+[Assignment 15 - StatsProgram](Assignment15.md)
+
+[Assignment 16 - PokerProbability](Assignment16.md)

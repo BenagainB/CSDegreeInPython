@@ -1,0 +1,75 @@
+Assignment One - MetricConversion
+
+Problem Decomposition:
+
+Start by building a simple main function, then copy in the expected output
+
+have main print the expected output as a single string block
+
+def main():
+    print("""
+    Enter your Name: Brian
+    Enter Height in inches: 72
+    Enter Weight in pounds: 275
+
+    Metric Calculation
+    Name: Brian
+    Height: 1.8288036576073152 meters
+    Weight: 124.7125 kilograms
+    """)
+
+
+if __name__ == "__main__":
+    main()
+
+run the program
+$python Assignment1.py
+Enter your Name: Brian
+Enter Height in inches: 72
+Enter Weight in pounds: 275
+
+Metric Calculation
+Name: Brian
+Height: 1.8288036576073152 meters
+Weight: 124.7125 kilograms
+This makes sure the main function works
+
+Next, decompose the problem:
+build variables name, height, and weight to accept input from the user
+replace the string block with variables assigning input and variables in output print statements
+name = input("Enter your Name: ") #Brian
+height = input("Enter Height in inches: ") #72
+weight = input("Enter Weight in pounds: ") #275
+print()
+print("Metric Calculation")
+print("Name: " + name) #Brian
+print("Height: " + height + " meters") #72
+print("Weight: " + weight + " kilograms") #275
+
+run the program
+$python Assignment1.py
+Enter your Name: $Brian
+Enter Height in inches: $72
+Enter Weight in pounds: $275
+
+Metric Calculation
+Name: Brian
+Height: 72 meters
+Weight: 275 kilograms
+
+This makes sure input and variable assignments work
+
+Finally, convert the input values to metric
+
+def convertInchToMeter(value):
+    return float(value) * 0.0254
+
+def convertPoundsToKilos(value):
+    return float(value) * 0.4535
+
+and change the output print statements to accept non-string values from the new functions
+
+    print("Height:", convertInchToMeter(height), "meters") #1.8288036576073152
+    print("Weight:", convertPoundsToKilos(weight), "kilograms") #124.7125
+
+run the complete program and test results
