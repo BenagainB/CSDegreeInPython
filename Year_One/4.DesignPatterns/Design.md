@@ -1,4 +1,4 @@
-# Design Patterns
+# Design Patterns / Object-Oriented Programming
 
 [<< Go back up a level](/Year_One/Year_One.md)
 
@@ -40,8 +40,37 @@ Programming Principles I and II
 *	UML Class Diagrams
 
 ### Key Concepts:
-*   
 
+#### **Design Patterns**
+
+|Pattern Type|Pattern Name|Description|Scope|
+|---|---|---|---|
+|**Creational**||||
+||Factory|Defers Objection Creation to sub-classes|Class|
+||Abstract Factory|Defers Objection Creation to sub-classes|Class|
+||Builder|Defers object creation to object|Object|
+||Prototype|Defers object creation to object|Object|
+||Singleton|Defers object creation to object|Object|
+|**Structural**||||
+||Adapter|Describes a way to assemble objects|Object|
+||Bridge|Describes a way to assemble objects|Object|
+||Composite|Describes a way to assemble objects|Object|
+||Decorator|Describes a way to assemble objects|Object|
+||Facade|Describes a way to assemble objects|Object|
+||Flyweight|Describes a way to assemble objects|Object|
+||Proxy|Describes a way to assemble objects|Object|
+|**Behavioral**||||
+||Interpreter|Describes algorithms and flow control|Class|
+||Template|Describes algorithms and flow control|Class|
+||Chain of Responsibility|Describes how groups of objects co-operate|Object|
+||Command|Describes how groups of objects co-operate|Object|
+||Iterator|Describes how groups of objects co-operate|Object|
+||Mediator|Describes how groups of objects co-operate|Object|
+||Memento|Describes how groups of objects co-operate|Object|
+||Observer|Describes how groups of objects co-operate|Object|
+||State|Describes how groups of objects co-operate|Object|
+||Strategy|Describes how groups of objects co-operate|Object|
+||Visitor|Describes how groups of objects co-operate|Object|
 
 ## Learning Outcomes 
 *   Write a basic program with multiple design patterns that models familiar computational behavior whose implementation is likely not familiar or understood
@@ -56,3 +85,16 @@ Programming Principles I and II
 ## Assignments
 
 
+
+[Assignment 1 - UML Diagrams](Assignment1.md)
+
+### Creational
+
+[Assignment 2 - Factory Pattern](Assignment2.md)
+
+[Assignment 3 - Abstract Factory Pattern](Assignment3.md)
+
+### Structural
+
+
+### Behavioral

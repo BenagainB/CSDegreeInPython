@@ -19,7 +19,7 @@ Programming Principles I and a fair understanding of basic Algebra
 *   Review:  
     *	Classes, methods, and references
     *	Interfaces
-*   Compostion:
+*   Composition:
     *	Has-a relationship, 
     *	References to other classes
     *	Encapsulation vs alias
@@ -184,4 +184,6 @@ If you are not careful with factory/abstract factory your code can violate depen
 
 ## Assignments
 
+[Assignment 1 - 2D Multi-Dimensional Arrays](Assignment1.md)
 
+[Assignment 2 - Whatever](Assignment2.md)

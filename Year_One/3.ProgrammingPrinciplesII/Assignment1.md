@@ -4,36 +4,29 @@
 
 ## Assignment Overview
 
-This assignment involves coding and testing of 4 programs.
-
-The first program will require you to perform simple arithmetic operations in multi-dimensional arrays.
-
-The second program will require you to re-write an existing program using a multi-dimensional array.
- 
-The third program will require you to sum a multi-dimensional array by row and then sort by value.
-
-The fourth program will require you to write a method to sort a multi-dimensional array by rows.
+This assignment involves coding and testing of 4 programs:
+1.  The first program will require you to perform simple arithmetic operations in multi-dimensional arrays.
+2.  The second program will require you to re-write an existing program using a multi-dimensional array.
+3.  The third program will require you to sum a multi-dimensional array by row and then sort by value.
+4.  The fourth program will require you to write a method to sort a multi-dimensional array by rows.
 
 ### Details
 
 Write 4 programs:
-
-code_Assignment1_SumArray.py
-
-SortStudentsArray.py
-
-WeeklyHoursArray.py
-
-SortRowsColumnsArray.py
+1.  code_Assignment1_SumArray.py
+2.  code_Assignment1_SortStudentsArray.py
+3.  code_Assignment1_WeeklyHoursArray.py
+4.  code_Assignment1_SortRowsColumnsArray.py
 
 ### Program Specifications - SumArray:
 
-Write a method that returns the sum of all the elements in a specified column in a m(Sum elements column by column) matrix using the following header:
+*   Write a method that returns the sum of all the elements in a specified column in a m(Sum elements column by column) matrix.
 
-public static double sumColumn(double[][] m, int columnIndex)
+~~public static double sumColumn(double[][] m, int columnIndex)~~
 
+*   Write a test program that reads a 3-by-4 matrix and displays the sum of each column. 
 
-Write a test program that reads a 3-by-4 matrix and displays the sum of each column. Here is a sample run:
+Here is a sample run:
 ```
 Enter a 3-by-4 matrix row by row:
 1.5 2 3 4
@@ -50,21 +43,23 @@ Sum of the elements at column 3 is 13.0
 
 (SORT STUDENTS ON GRADES) Rewrite GradeExam.java, to display the students in increasing order of the number of correct answers.
 
-GradeExam.java
-```
+
+```java
+//* GradeExam.java */
+
 public class GradeExam {
     /** Main method */
     public static void main(String[] args) {
         //Student' answers to the questions
         char[][] answers = {
-            {'A', 'B', 'A', C, C, D, E, E, A D},
-            {D, B, A, B, C, A, E, E, A, D},
-            {E, D, D, A, C, B, E, E, A, D},
-            {C, B, A, E, D, C, E, E, A, D},
-            {A, B, D, C, C, D, E, E, A, D},
-            {B, B, E, C, C, D, E, E, A, D},
-            {B, B, A, C, C, D, E, E, A, D},
-            {E, B, E, C, C, D, E, E, A, D}};
+            {'A', 'B', 'A', 'C', 'C', 'D', 'E', 'E', 'A', 'D'},
+            {'D', 'B', 'A', 'B', 'C', 'A', 'E', 'E', 'A', 'D'},
+            {'E', 'D', 'D', 'A', 'C', 'B', 'E', 'E', 'A', 'D'},
+            {'C', 'B', 'A', 'E', 'D', 'C', 'E', 'E', 'A', 'D'},
+            {'A', 'B', 'D', 'C', 'C', 'D', 'E', 'E', 'A', 'D'},
+            {'B', 'B', 'E', 'C', 'C', 'D', 'E', 'E', 'A', 'D'},
+            {'B', 'B', 'A', 'C', 'C', 'D', 'E', 'E', 'A', 'D'},
+            {'E', 'B', 'E', 'C', 'C', 'D', 'E', 'E', 'A', 'D'}};
         
         //Key to the questions
         char[] keys = {'D', 'B', 'D', 'C', 'C', 'D', 'A', 'E', 'A', 'D'};
@@ -154,20 +149,20 @@ You only need to use the basic list and not a more advanced structure for the as
 
 ### Hints
 
-[Go To Decomposition](code_Assignment1_SumArray.txt)
+[Go To SumArray Decomposition](Assignment1_SumArray.txt)
 
-[Go To Decomposition](SortStudentsArray.txt)
+[Go To SortStudentsArray Decomposition](Assignment1_SortStudentsArray.txt)
 
-[Go To Decomposition](WeeklyHoursArray.txt)
+[Go To WeeklyHoursArray Decomposition](Assignment1_WeeklyHoursArray.txt)
 
-[Go To Decomposition](SortRowsColumnsArray.txt)
+[Go To SortRowsColumnsArray Decomposition](Assignment1_SortRowsColumnsArray.txt)
 
 ### Solution
 
-[Go To Code](code_Assignment1_SumArray.py)
+[Go To SumArray Code](code_Assignment1_SumArray.py)
 
-[Go To Code](SortStudentsArray.py)
+[Go To SortStudentsArray Code](code_Assignment1_SortStudentsArray.py)
 
-[Go To Code](WeeklyHoursArray.py)
+[Go To WeeklyHoursArray Code](code_Assignment1_WeeklyHoursArray.py)
 
-[Go To Code](SortRowsColumnsArray.py)
+[Go To SortRowsColumnsArray Code](code_Assignment1_SortRowsColumnsArray.py)

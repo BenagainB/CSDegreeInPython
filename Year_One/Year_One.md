@@ -53,13 +53,15 @@ I've included some math courses in this section because this is typically the le
 
 [Programming Principles II](3.ProgrammingPrinciplesII/ProgrammingPrinciplesII.md)
 
-[Design Patterns](4.DesignPatterns/Design.md)
+[Design Patterns / Object-Oriented Programming](4.DesignPatterns/Design.md)
 
 [Algebra and Pre-Calculus](5.AlgebraAndPre-Calc/Algebra.md)
 
 ## Reading List:
 
 > *Starting Out with Python* (4th Edition) by Tony Gaddis • ISBN-10:0134444329 • ISBN-13:9780134444321
+
+> *Python Crash Course: A Hands-On, Project-Based Introduction to Programming* (3rd Edition) by Eric Matthes • ISBN-10:1718502702 • ISBN-13:978-1718502703
 
 > *Head First Design Patterns* by Eric Freeman and Elisabeth Freeman • ISBN 978-0-596-00712-6 • ISBN-13:9780134444321
 

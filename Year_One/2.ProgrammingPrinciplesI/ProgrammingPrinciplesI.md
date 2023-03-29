@@ -14,6 +14,8 @@ Fair understanding of basic Algebra and Order of Operations
 
 > *Starting Out with Python* (4th Edition) by Tony Gaddis • ISBN-10:0134444329 • ISBN-13:9780134444321
 
+> *Python Crash Course: A Hands-On, Project-Based Introduction to Programming* (3rd Edition) by Eric Matthes • ISBN-10:1718502702 • ISBN-13:978-1718502703
+
 ## Topics Covered 
 *   Data representation in Java 
     *   Primitive types
