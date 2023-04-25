@@ -21,7 +21,7 @@ value belonging to this range.
 *   Given a value range [x..y] = [22..35], the answer should be null, because no array element has a value belonging to this range.
 
 ### Visual explanation of Binary Search algorithm (external link)
-[![Visual explanation of Binary Search algorithm](BinarySearchVideo.png)](https://www.youtube.com/watch?v=wz7XgKowJIg)
+[![Visual explanation of Binary Search algorithm](ass1_BinarySearchVideo.png)](https://www.youtube.com/watch?v=wz7XgKowJIg)
 
 ### Background
 
@@ -97,4 +97,4 @@ and the output should be:
 
 ### Solution
 
-[simple solution](BinarySearchRange.py)
+[simple solution](ass1_BinarySearchRange.py)
