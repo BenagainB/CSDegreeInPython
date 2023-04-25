@@ -6,6 +6,7 @@ from SinglyLinkedList import Node
 from SinglyLinkedList import SinglyLinkedList
 
 class TestSinglyLinkedList(unittest.TestCase):
+    """ test class for SinglyLinkedList """
     def setUp(self):
         self.my_linked_list = SinglyLinkedList()
         self.node1 = Node(1, None, None)
@@ -14,39 +15,48 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.node4 = Node(4, None, None)
         self.node5 = Node(5, None, None)
 
-    def test_creationOfInstances_success(self):
+    def test_creation_of_instances_success(self):
+        """ ensure creation of instances """
         self.assertIsNotNone(self.my_linked_list)
         self.assertIsNotNone(self.node1)
 
-    def test_nodeGetValue_success(self):
+    def test_node_get_value_success(self):
+        """ ensure get_value functional """
         self.assertEqual(1, self.node1.get_value())
 
-    def test_nodeSetValueCorrect_success(self):
+    def test_node_set_value_correct_success(self):
+        """ ensure set_value functional """
         self.node1.set_value(2)
         self.assertEqual(2, self.node1.get_value())
 
-    def test_nodeSetValueNone_success(self):
+    def test_node_set_value_none_success(self):
+        """ check function of set_value edge case """
         self.node1.set_value(None)
         self.assertEqual(1, self.node1.get_value())
 
-    def test_nodeNextIsNone_success(self):
+    def test_node_next_is_none_success(self):
+        """ ensure node.next is reachable when set to none """
         self.assertIsNone(self.node1.get_next())
 
-    def test_noneSetNext_success(self):
+    def test_none_set_next_success(self):
+        """ ensure set_next functional """
         self.node1.set_next(self.node2)
         self.assertEqual(self.node2, self.node1.get_next())
 
-    def test_linkedListEmpty_success(self):
+    def test_linkedlist_empty_success(self):
+        """ ensure LinkedList.head reachable when set to none """
         self.assertIsNone(self.my_linked_list.head)
 
-    def test_addFirst_success(self):
+    def test_add_first_success(self):
+        """ ensure add_first functional """
         self.my_linked_list.add_first(self.node1)
         self.assertEqual("1 ", self.my_linked_list.to_string())
         self.assertNotEqual("1", self.my_linked_list.to_string())
         self.assertNotEqual("2", self.my_linked_list.to_string())
         self.assertEqual(None, self.my_linked_list.add_first(None))
 
-    def test_addLast_success(self):
+    def test_add_last_success(self):
+        """ ensure add_last functional """
         self.my_linked_list.add_last(self.node1)
         self.assertEqual("1 ", self.my_linked_list.to_string())
         self.assertNotEqual("1", self.my_linked_list.to_string())
@@ -59,7 +69,8 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertNotEqual("1 2 ", self.my_linked_list.to_string())
         self.assertEqual("1 2 3 ", self.my_linked_list.to_string())
 
-    def test_removeFirst_success(self):
+    def test_remove_first_success(self):
+        """ ensure remove_first functional """
         self.my_linked_list.add_first(self.node1)
         self.my_linked_list.add_last(self.node2)
         self.assertEqual("1 2 ", self.my_linked_list.to_string())
@@ -70,7 +81,8 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.my_linked_list.remove_first()
         self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
 
-    def test_removeLast_success(self):
+    def test_remove_last_success(self):
+        """ ensure remove_last functional """
         self.my_linked_list.add_first(self.node1)
         self.my_linked_list.add_last(self.node2)
         self.my_linked_list.add_last(self.node3)
@@ -84,7 +96,8 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.my_linked_list.remove_last()
         self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
 
-    def test_addAfter_success(self):
+    def test_add_after_success(self):
+        """ ensure add_after functional """
         self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
         self.my_linked_list.add_after(None, None)
         self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
@@ -98,7 +111,8 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.my_linked_list.add_after(self.node2, self.node1)
         self.assertEqual("1 2 ", self.my_linked_list.to_string())
 
-    def test_addBefore_success(self):
+    def test_add_before_success(self):
+        """ ensure add_before functional """
         self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
         self.my_linked_list.add_before(None, None)
         self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
@@ -119,7 +133,8 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.my_linked_list.add_before(self.node4, self.node5)
         self.assertEqual("1 2 3 4 5 ", self.my_linked_list.to_string())
 
-    def test_removeAfter_success(self):
+    def test_remove_after_success(self):
+        """ ensure remove_after functional """
         self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
         self.my_linked_list.add_first(self.node1)
         self.my_linked_list.add_last(self.node2)
@@ -131,7 +146,8 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.my_linked_list.remove_after(self.node1)
         self.assertEqual("1 ", self.my_linked_list.to_string())
 
-    def test_removeBefore_success(self):
+    def test_remove_before_success(self):
+        """ ensure remove_before functional """
         self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
         self.my_linked_list.add_first(self.node1)
         self.my_linked_list.add_last(self.node2)
@@ -148,7 +164,8 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.my_linked_list.remove_before(self.node5)
         self.assertEqual("2 3 5 ", self.my_linked_list.to_string())
 
-    def test_linkedListSize_success(self):
+    def test_get_size_success(self):
+        """ ensure get_size functional """
         self.assertEqual(0, self.my_linked_list.get_size())
         self.my_linked_list.add_first(self.node1)
         self.assertNotEqual(0, self.my_linked_list.get_size())
