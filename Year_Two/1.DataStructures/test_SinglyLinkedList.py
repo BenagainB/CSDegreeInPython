@@ -70,15 +70,37 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
 
     def test_removeLast_success(self):
-        pass
+        self.my_linked_list.add_first(self.node1)
+        self.my_linked_list.add_last(self.node2)
+        self.my_linked_list.add_last(self.node3)
+        self.assertEqual("1 2 3 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_last()
+        self.assertEqual("1 2 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_last()
+        self.assertEqual("1 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_last()
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.remove_last()
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
 
     def test_addAfter_success(self):
-        pass
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.add_after(None, None)
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.add_after(self.node1, None)
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.add_after(None, self.node1)
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.add_first(self.node1)
+        self.my_linked_list.add_after(None, self.node1)
+        self.assertEqual("1 ", self.my_linked_list.to_string())
+        self.my_linked_list.add_after(self.node2, self.node1)
+        self.assertEqual("1 2 ", self.my_linked_list.to_string())
 
     def test_addBefore_success(self):
         pass
 
-    def test_remove_after_success(self):
+    def test_removeAfter_success(self):
         pass
 
     def test_removeBefore_success(self):
@@ -93,6 +115,11 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertNotEqual(1, self.my_linked_list.get_size())
         self.assertEqual(2, self.my_linked_list.get_size())
 
+# python test_SinglyLinkedList.py
+    # ...........
+    # ----------------------------------------------------------------------
+    # Ran 11 tests in 0.000s
+    # OK
 
 # pip install pytest
 # Use pytest to test all cases beginning with test_ (even if main is not defined)
