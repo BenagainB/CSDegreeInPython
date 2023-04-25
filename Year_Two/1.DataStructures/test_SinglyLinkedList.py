@@ -12,6 +12,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.node2 = Node(2, None, None)
         self.node3 = Node(3, None, None)
         self.node4 = Node(4, None, None)
+        self.node5 = Node(5, None, None)
 
     def test_creationOfInstances_success(self):
         self.assertIsNotNone(self.my_linked_list)
@@ -98,13 +99,54 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual("1 2 ", self.my_linked_list.to_string())
 
     def test_addBefore_success(self):
-        pass
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.add_before(None, None)
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.add_before(self.node1, None)
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.add_before(None, self.node1)
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.add_first(self.node5)
+        self.assertEqual("5 ", self.my_linked_list.to_string())
+        self.my_linked_list.add_before(None, self.node5)
+        self.assertEqual("5 ", self.my_linked_list.to_string())
+        self.my_linked_list.add_before(self.node3, self.node5)
+        self.assertEqual("3 5 ", self.my_linked_list.to_string())
+        self.my_linked_list.add_before(self.node1, self.node3)
+        self.assertEqual("1 3 5 ", self.my_linked_list.to_string())
+        self.my_linked_list.add_before(self.node2, self.node3)
+        self.assertEqual("1 2 3 5 ", self.my_linked_list.to_string())
+        self.my_linked_list.add_before(self.node4, self.node5)
+        self.assertEqual("1 2 3 4 5 ", self.my_linked_list.to_string())
 
     def test_removeAfter_success(self):
-        pass
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.add_first(self.node1)
+        self.my_linked_list.add_last(self.node2)
+        self.assertEqual("1 2 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_after(None)
+        self.assertEqual("1 2 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_after(self.node2)
+        self.assertEqual("1 2 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_after(self.node1)
+        self.assertEqual("1 ", self.my_linked_list.to_string())
 
     def test_removeBefore_success(self):
-        pass
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.add_first(self.node1)
+        self.my_linked_list.add_last(self.node2)
+        self.my_linked_list.add_last(self.node3)
+        self.my_linked_list.add_last(self.node4)
+        self.my_linked_list.add_last(self.node5)
+        self.assertEqual("1 2 3 4 5 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_before(None)
+        self.assertEqual("1 2 3 4 5 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_before(self.node1)
+        self.assertEqual("1 2 3 4 5 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_before(self.node2)
+        self.assertEqual("2 3 4 5 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_before(self.node5)
+        self.assertEqual("2 3 5 ", self.my_linked_list.to_string())
 
     def test_linkedListSize_success(self):
         self.assertEqual(0, self.my_linked_list.get_size())
@@ -118,7 +160,7 @@ class TestSinglyLinkedList(unittest.TestCase):
 # python test_SinglyLinkedList.py
     # ...........
     # ----------------------------------------------------------------------
-    # Ran 11 tests in 0.000s
+    # Ran 16 tests in 0.000s
     # OK
 
 # pip install pytest
@@ -129,28 +171,29 @@ class TestSinglyLinkedList(unittest.TestCase):
 # coverage report ass3_SinglyLinkedList.py
     # Name                  Stmts   Miss  Cover
     # -----------------------------------------
-    # SinglyLinkedList.py     103     84    18%
+    # SinglyLinkedList.py     105      0   100%
     # -----------------------------------------
-    # TOTAL                   103     84    18%
+    # TOTAL                   105      0   100%
 # coverage report -m SinglyLinkedList.py
     # Name                  Stmts   Miss  Cover   Missing
     # ---------------------------------------------------
-    # SinglyLinkedList.py     103     62    40%   43, 50-57, 61-66, 70-79, 83-87, 91-101, 105-112, 116-131, 140
+    # SinglyLinkedList.py     105      0   100%
     # ---------------------------------------------------
-    # TOTAL                   103     62    40%
+    # TOTAL                   105      0   100%
 # coverage html
     # generates htmlcov folder, view index.html to see clean report
 
 # pip install pytest-cov
 # pytest --cov=SinglyLinkedList
+    # collected 16 items
     # test_SinglyLinkedList.py .........                                                    [100%]
     # ---------- coverage: platform darwin, python 2.7.18-final-0 ----------
     # Name                  Stmts   Miss  Cover
     # -----------------------------------------
-    # SinglyLinkedList.py     103     62    40%
+    # SinglyLinkedList.py     105      0   100%
     # -----------------------------------------
-    # TOTAL                   103     62    40%
-    # ========== 9 passed in 0.09 seconds ======================================================
+    # TOTAL                   105      0   100%
+    # ========== 16 passed in 0.11 seconds ======================================================
 
 if __name__ == "__main__":
     unittest.main()
