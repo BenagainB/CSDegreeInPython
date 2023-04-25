@@ -1,4 +1,5 @@
-# ass3_TestSinglyLinkedList.py
+# test_SinglyLinkedList.py
+""" test cases for SinglyLinkedList """
 
 import unittest
 from SinglyLinkedList import Node
@@ -42,6 +43,46 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.assertEqual("1 ", self.my_linked_list.to_string())
         self.assertNotEqual("1", self.my_linked_list.to_string())
         self.assertNotEqual("2", self.my_linked_list.to_string())
+        self.assertEqual(None, self.my_linked_list.add_first(None))
+
+    def test_addLast_success(self):
+        self.my_linked_list.add_last(self.node1)
+        self.assertEqual("1 ", self.my_linked_list.to_string())
+        self.assertNotEqual("1", self.my_linked_list.to_string())
+        self.assertNotEqual("2", self.my_linked_list.to_string())
+        self.assertEqual(None, self.my_linked_list.add_first(None))
+        self.my_linked_list.add_last(self.node2)
+        self.assertNotEqual("2", self.my_linked_list.to_string())
+        self.assertEqual("1 2 ", self.my_linked_list.to_string())
+        self.my_linked_list.add_last(self.node3)
+        self.assertNotEqual("1 2 ", self.my_linked_list.to_string())
+        self.assertEqual("1 2 3 ", self.my_linked_list.to_string())
+
+    def test_removeFirst_success(self):
+        self.my_linked_list.add_first(self.node1)
+        self.my_linked_list.add_last(self.node2)
+        self.assertEqual("1 2 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_first()
+        self.assertEqual("2 ", self.my_linked_list.to_string())
+        self.my_linked_list.remove_first()
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+        self.my_linked_list.remove_first()
+        self.assertEqual("Linked List is empty", self.my_linked_list.to_string())
+
+    def test_removeLast_success(self):
+        pass
+
+    def test_addAfter_success(self):
+        pass
+
+    def test_addBefore_success(self):
+        pass
+
+    def test_remove_after_success(self):
+        pass
+
+    def test_removeBefore_success(self):
+        pass
 
     def test_linkedListSize_success(self):
         self.assertEqual(0, self.my_linked_list.get_size())
@@ -51,6 +92,7 @@ class TestSinglyLinkedList(unittest.TestCase):
         self.my_linked_list.add_first(self.node2)
         self.assertNotEqual(1, self.my_linked_list.get_size())
         self.assertEqual(2, self.my_linked_list.get_size())
+
 
 # pip install pytest
 # Use pytest to test all cases beginning with test_ (even if main is not defined)

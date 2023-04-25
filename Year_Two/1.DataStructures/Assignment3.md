@@ -7,9 +7,9 @@
 
 #### Review Singly Linked List
 
-[Singly Linked List (code)](ass3_SinglyLinkedList.py)
+[Singly Linked List (code)](SinglyLinkedList.py)
 
-[Singly Linked List Tester (code)](ass3_TestSinglyLinkedList.py)
+[Singly Linked List Tester (code)](test_SinglyLinkedList.py)
 
 ### Circular Doubly Linked List
 

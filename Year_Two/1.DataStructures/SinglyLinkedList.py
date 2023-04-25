@@ -132,6 +132,8 @@ class SinglyLinkedList:
 
     def to_string(self):
         """ The concatenation of all the elements in the list """
+        if self.size == 0:
+            return "Linked List is empty"
         list_details = ""
         cur_node = self.head
         while cur_node.get_value() is not None:
