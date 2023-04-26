@@ -19,15 +19,38 @@ round of CPU service:
 
 #### Review Singly Linked List
 
+```mermaid
+graph LR;
+    A["Node (head)"]-->B["Node"]-->C["Node"]-->D["Node"];
+
+```
+
 [Singly Linked List (code)](SinglyLinkedList.py)
 
 [Singly Linked List Tester (code)](test_SinglyLinkedList.py)
+
+#### Review Doubly Linked List
+
+```mermaid
+graph LR;
+    A["Node (head)"]-->B;
+    B-->A;
+    B["Node"]-->C;
+    C-->B;
+    C["Node"]-->D;
+    D["Node (tail)"]-->C;
+
+```
+
+[Doubly Linked List (code)](DoublyLinkedList.py)
+
+[Doubly Linked List Tester (code)](test_DoublyLinkedList.py)
 
 ### Circular Doubly Linked List
 
 ### Background
 
-Roughly speaking from the operating system’s point of view, a process is a running program. Modern computer operating systems, such as Microsoft Windows, various Linux deliveries, and MacOS, support multiprocess (or also called multi-task or multi-job) computing, meaning the user can run multiple programs simultaneously on one machine. However, any single computer processing unit (such as a core within a multi-core CPU or a single-core CPU) can do the computation for only one process at any moment. So, how to run the multiple processes “simultaneously” on one machine ? The way that the operating system does is to let the CPU serve one process for a very short period of time and then switch the CPU to serve another process and so on. By doing so, the user feels that all the processes are running in parallel. This raises the following important and challenging question: how to schedule/queue the processes so that they can be served “fairly” and the overall multi-process system looks working quite smoothly ? This question is about process scheduling and there are many different scheduling policies/strategies/algorithms dealing with this issue by considering different needs and targeting different goals. In this programming assignment, we want to implement a very basic and simple version of the [Round-Robin](https://en.wikipedia.org/wiki/Round-robin_scheduling) scheduling by using a circular doubly linked list data structure.
+Roughly speaking from the operating system’s point of view, a process is a running program. Modern computer operating systems, such as Microsoft Windows, various Linux deliveries, and MacOS, support multiprocess (or also called multi-task or multi-job) computing, meaning the user can run multiple programs simultaneously on one machine. However, any single computer processing unit (such as a core within a multi-core CPU or a single-core CPU) can do the computation for only one process at any moment. So, how to run the multiple processes “simultaneously” on one machine ? The way that the operating system does is to let the CPU serve one process for a very short period of time and then switch the CPU to serve another process and so on. By doing so, the user feels that all the processes are running in parallel. This raises the following important and challenging question: how to schedule/queue the processes so that they can be served “fairly” and the overall multi-process system looks working quite smoothly ? This question is about process scheduling and there are many different scheduling policies/strategies/algorithms dealing with this issue by considering different needs and targeting different goals. In this programming assignment, we want to implement a very basic and simple version of the <a href="https://en.wikipedia.org/wiki/Round-robin_scheduling" target="_blank">Round-Robin</a> scheduling by using a circular doubly linked list data structure.
 
 ### Program Specifications
 1.  Your program should be named: RoundRobin.py
@@ -67,11 +90,21 @@ Then your program will construct the following circular doubly linked list to st
 
 ```mermaid
 graph TD;
-    [1,10]<-->[2,7];
-    [2,7]<-->[3,19];
-    [3,19]<-->[4,12];
-    [4,12]<-->[5,16];
-    [5,16]<-->[1,10];
+    A("process id: 1,
+    CPU time needs: 10")-->B;
+    B("process id: 2,
+    CPU time needs: 7")-->A;
+    B-->C;
+    C("process id: 3,
+    CPU time needs: 19")-->B;
+    C-->D;
+    D("process id: 4,
+    CPU time needs: 12")-->C;
+    E("process id: 5,
+    CPU time needs: 16")-->D;
+    D-->E;
+    E-->A;
+    A-->E;
 
 ```
 
