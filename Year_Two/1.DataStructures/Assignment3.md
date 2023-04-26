@@ -68,6 +68,8 @@ You need to construct a circular doubly linked list to organize all the processe
 
 [data file](ass3_data.txt)
 
+[bigger data file (extra credit)](ass3_big_data.txt)
+
 #### Questions for you to consider
 
 
@@ -84,7 +86,7 @@ with each CPU service time length being 5:
 
 Then, the command line you should type would be:
 
-    $python RoundRobin.py ass3.txt 5
+    $python RoundRobin.py ass3_data.txt 5
 
 Then your program will construct the following circular doubly linked list to start with:
 
